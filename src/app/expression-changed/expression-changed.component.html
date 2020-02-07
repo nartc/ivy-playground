@@ -1,0 +1,7 @@
+<button type="button" (click)="onLoadData()">Load Data</button>
+<div *ngIf="loading$ | async">Loading...</div>
+<ul>
+  <li *ngFor="let name of names$ | async">
+    {{name}}
+  </li>
+</ul>
