@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'a', loadChildren: () => import('./provided-in-any/module-a/module-a.module').then(m => m.ModuleAModule) },
   { path: 'b', loadChildren: () => import('./provided-in-any/module-b/module-b.module').then(m => m.ModuleBModule) },
   { path: 'lazy', loadChildren: () => import('./lazy-load/lazy-load.module').then(m => m.LazyLoadModule) },
-  { path: 'style-binding', loadChildren: () => import('./style-binding/style-binding.module').then(m => m.StyleBindingModule) }
+  { path: 'style-binding', loadChildren: () => import('./style-binding/style-binding.module').then(m => m.StyleBindingModule) },
+  { path: 'inheritance', loadChildren: () => import('./inheritance/inheritance.module').then(m => m.InheritanceModule) }
 ];
 
 @NgModule({
